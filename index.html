@@ -533,7 +533,7 @@
         </div>
         <div class="card-footer">
           <span>By Ramit Sunar · March 2025</span>
-          <button class="read-more" onclick="openModal()">READ MORE →</button>
+          <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
         </div>
       </div>
     </div>
@@ -546,7 +546,7 @@
       <p>How to use Termux on mobile to make Python API calls — complete with full code blocks.</p>
       <div class="card-footer">
         <span>Mar 2025</span>
-        <button class="read-more" onclick="openModal2()">READ MORE →</button>
+        <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
       </div>
     </div>
 
@@ -558,7 +558,7 @@
       <p>An informative analysis of upcoming IPOs in Nepal and the latest Bitcoin price trends.</p>
       <div class="card-footer">
         <span>Mar 2025</span>
-        <button class="read-more" onclick="openModal3()">READ MORE →</button>
+        <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
       </div>
     </div>
 
@@ -578,7 +578,7 @@
       </div>
       <div class="card-footer">
         <span>Mar 2025</span>
-        <button class="read-more" onclick="openModal4()">READ MORE →</button>
+        <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
       </div>
     </div>
 
@@ -601,7 +601,7 @@
         </div>
         <div class="card-footer">
           <span>Mar 2025</span>
-          <button class="read-more" onclick="openModal5()" style="color:#7b2fff;">READ MORE →</button>
+          <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
         </div>
       </div>
     </div>
@@ -625,7 +625,7 @@
         </div>
         <div class="card-footer">
           <span>Mar 2025</span>
-          <button class="read-more" onclick="openModal6()">READ MORE →</button>
+          <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
         </div>
       </div>
     </div>
@@ -650,7 +650,7 @@
         </div>
         <div class="card-footer">
           <span>Mar 2025</span>
-          <button class="read-more" onclick="openModal7()">READ MORE →</button>
+          <button class="read-more" onclick="openAdSmart()">READ MORE →</button>
         </div>
       </div>
     </div>
@@ -1456,6 +1456,15 @@ async function sendAiMsg() {
   
   aiIsTyping = false;
   document.getElementById('aiSendBtn').disabled = false;
+  let adOpened = false;
+
+function openAdSmart() {
+  if (!adOpened) {
+    window.open('https://omg10.com/4/10803428', '_blank');
+    adOpened = true;
+  }
+
+  window.location.href = "post.html";
 }
 </script>
 </body>
